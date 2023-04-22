@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Darren Yu">
+    <meta name="description" content="First Meeting's Meeting Minutes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="screenshots/image.jpg">
+    <title>Hello World</title>
+  </head>
+  <body>
+    <header>
+        <div class="Meeting"><h1>Compony Meeting Minutes</h1></div>
+      <nav>
+        <ol>
+          <li><a href="#Attendance">Roster</a></li>
+          <li><a href="#Brainstorm">Ideas</a></li>
+          <li><a href="#Models">Models</a></li>
+        </ol>
+      </nav>
+    </header> <hr>
+
+    <main>
+      <section id="Attendance">
+        <h2>Attendance</h2>
+        <details>
+          <summary>Welcome Audio</summary>
+          <audio controls>
+            <source src="sounds/welcome.mp3" type="audio/mpeg">
+          </audio>
+        </details>
+        <ul>
+          <li>Bob F. Allan</li>
+          <li>Kelly J. Burner</li>
+          <li>Evan L. Dover</li>
+          <li>Tim Q. Max</li>
+          <li>Allan G. Stangler</li>
+          <li>Kevin N. Zhu</li>
+        </ul>
+      </section> <hr>
+
+      <section id="Brainstorm">
+        <h2>Brainstorming</h2>
+        <h3><span>Potential Ideas:</span></h3>
+        <ul>
+          <li><b>Metal Straws</b></li>
+          <li><strong>Glass Straws</strong><br></li>
+          <li><i>Wooden Straws</i></li>
+          <li><em>Concrete Straws</em></li>
+        </ul>
+        <video width="300" height="300" controls>
+          <source src="video/timer.mp4" type="video/mp4">
+        </video>
+      </section> <hr>
+
+      <section id="Models">
+        <h2>Prototypes</h2>
+        <img src="screenshots/straws.jpg" alt="screenshots/backup.jpg" width="400" height="400">
+      </section>
+        <p>The prototype above was made in 2 hours.</p> <hr>
+
+      <form>
+        <fieldset>
+          <legend>Contact Me</legend>
+          <label for="name">Your Name</label> <br>
+          <input type="text" id="name" name="name"> <br>
+          <label for="date">Today's Date</label> <br>
+          <input type="date" id="date" name="date"> <br>
+          <label for="error">Issues</label> <br>
+          <select name="Sections" id="error">
+            <option value="Roster">Roster</option>
+            <option value="Brainstorm">Ideas</option>
+            <option value="Models">Models</option>
+          </select> <br>
+
+          <label for="school">UC Campus</label> <br>
+          <input list="schools" id="school" name="school">
+          <datalist id="schools">
+            <option value="UCLA"></option>
+            <option value="UCB"></option>
+            <option value="UCSD"></option>
+            <option value="UCI"></option>
+            <option value="UCSB"></option>
+            <option value="UCSC"></option>
+            <option value="UCD"></option>
+            <option value="UCR"></option>
+            <option value="UCM"></option>
+          </datalist> <br>
+          <label for="complaint">Message</label> <br>
+          <textarea id="complaint" name="complaint" rows="4" cols="50"></textarea> <br>
+          <label for="person1">To Who?</label> <br>
+          <input type="checkbox" id="person1" name="person1" value="human">
+          <label for="person1">Darren M. Yu</label> <br>
+          <input type="checkbox" id="person2" name="person2" value="human">
+          <label for="person2">Evan L. Dover</label> <br>
+          <input type="checkbox" id="person3" name="person3" value="human">
+          <label for="person3">Allan G. Stangler</label> <br>
+          <label for="proof">Press to Prove You're Not a Bot</label>
+          <input type="radio" id="proof" name="proof" value="proof"> <br>
+          <button type="button" onclick="alert('We have sent a message')">Submit</button>
+        </fieldset>
+      </form>
+
+    </main>
+
+    <footer>
+      <p>&copy; Darren Yu <br>
+        Email: <a href="https://gmail.com/">dmyu@ucsd.edu</a>
+      </p>
+    </footer> <hr>
+  </body>
+</html>
