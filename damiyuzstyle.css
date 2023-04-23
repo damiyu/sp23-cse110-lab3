@@ -1,0 +1,15 @@
+body {
+    /*This is used to make the website background blue and see through.*/
+    background-color: rgba(60, 60, 200, 0.5);
+}
+
+h1 {
+    /*Makes the title bigger and more noticeable.*/
+    color: black;
+    font-size: 3vw;
+    text-align: center;
+}
+
+* {
+    font-family: "allFont";
+}
