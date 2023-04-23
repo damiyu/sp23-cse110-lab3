@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-[My Page](https://damiyu.github.io/Lab2_Starter/)
+# Lab 3
+[My Page](https://damiyu.github.io/sp23-cse110-lab3/)
