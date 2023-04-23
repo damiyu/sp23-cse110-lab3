@@ -43,6 +43,21 @@
         padding: 10px;
         border: solid orange 3px;
       }
+
+      #dis1 {
+        display: block;
+        font-size: 30px;
+        background-color: red;
+        position: sticky;
+        bottom: 10px;
+      }
+      
+      #dis2 {
+        display: inline;
+        background-color: yellow;
+        position: relative;
+        left: 100px;
+      }
     </style>
   </head>
   <body>
@@ -53,6 +68,7 @@
           <li><a href="#Attendance">Roster</a></li>
           <li><a href="#Brainstorm">Ideas</a></li>
           <li><a href="#Models">Models</a></li>
+          <li><a href="#Fun">Fun</a></li>
         </ol>
       </nav>
     </header> <hr>
@@ -85,7 +101,7 @@
           <li><i>Wooden Straws</i></li>
           <li><em>Concrete Straws</em></li>
         </ul>
-        <video width="300" height="300" controls>
+        <video max-width="300" max-height="300" controls>
           <source src="video/timer.mp4" type="video/mp4">
         </video>
       </section> <hr>
@@ -138,6 +154,11 @@
         </fieldset>
       </form>
 
+      <section id="Fun">
+        <h2>Jokes</h2>
+        <div id="dis1">Why did Mozart hate chickens?</div>
+        <div id="dis2">All they say is “Bach, Bach, Bach!”</div>
+      </section> <hr>
     </main>
 
     <footer>
