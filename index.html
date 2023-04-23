@@ -42,6 +42,7 @@
         margin: auto;
         padding: 10px;
         border: solid orange 3px;
+        font-family: "cusFont";
       }
 
       #dis1 {
@@ -57,6 +58,86 @@
         background-color: yellow;
         position: relative;
         left: 100px;
+      }
+
+      h1:hover {
+        font-size: 100px;
+      }
+
+      h1:active, .gridbox-item:hover {
+        color: green;
+      }
+
+      .bigbox {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: black;
+      }
+
+      .bigbox-item {
+        background-color: yellow;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2pc;
+        padding: 10pt
+      }
+
+      .gridbox {
+        display: grid;
+        list-style: none;
+        column-gap: 10px;
+        row-gap: 15px;
+        grid-template-columns: repeat(3, 8pc);
+        grid-template-rows: repeat(3, 8pc);
+        justify-content: space-evenly;
+      }
+
+      .gridbox-item {
+        background-color: purple;
+        color: purple;
+        font-size: 15pt;
+        padding: 10px;
+      }
+
+      @media (max-width: 90pc) {
+        body {
+          background-color: yellow;
+        }
+      }
+
+      @font-face {
+        font-family: "cusFont";
+        src: url(CastoroTitling-Regular.ttf);
+      }
+
+      @font-face {
+        font-family: "allFont";
+        src: url(BrunoAce-Regular.ttf);
+      }
+
+      /*Makes image go to center*/
+      [id~="Models"] {
+        text-align: center;
+      }
+
+      ol > li {
+        background-color: red;
+      }
+
+      /*Makes audio back ground black*/
+      summary + audio {
+        background-color: purple;
+      }
+
+      label ~ input{
+        background-color: lightgoldenrodyellow;
+      }
+
+      li.bigbox-item {
+        background-color: gray;
       }
     </style>
   </head>
@@ -158,6 +239,28 @@
         <h2>Jokes</h2>
         <div id="dis1">Why did Mozart hate chickens?</div>
         <div id="dis2">All they say is “Bach, Bach, Bach!”</div>
+
+        <ul class="bigbox">
+          <li class="bigbox-item">(5) That was the funniest joke I've ever hear.</li>
+          <li class="bigbox-item">(4) Definitely the top 5 funniet jokes I know.</li>
+          <li class="bigbox-item">(3) A joke is a joke, I just chuckled a little bit.</li>
+          <li class="bigbox-item">(2) My dad makes funnier jokes.</li>
+          <li class="bigbox-item">(1) You're not funny.</li>
+        </ul>
+
+        <ul class="gridbox">
+          <li class="gridbox-item">Hi</li>
+          <li class="gridbox-item">Hello</li>
+          <li class="gridbox-item">What time is it?</li>
+          <li class="gridbox-item">Time for you to get a watch.</li>
+          <li class="gridbox-item">Boo</li>
+          <li class="gridbox-item">Did I scare you?</li>
+          <li class="gridbox-item">Chicken</li>
+          <li class="gridbox-item">Invisible text</li>
+          <li class="gridbox-item">Bye</li>
+        </ul>
+
+        <p style="text-align: center; font-size: 5pc;">Try Zooming In</p>
       </section> <hr>
     </main>
 
